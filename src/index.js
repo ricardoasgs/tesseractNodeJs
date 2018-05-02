@@ -1,17 +1,4 @@
-import tesseract from 'node-tesseract';
-import path from 'path';
+import app from "./config/appConfig";
+import routes from "./router/routes";
 
-const imageToOcr = path.join(__dirname, '\\teste.jpg')
-//const imageToOcr = path.join(__dirname, '\\img.png')
-
-tesseract.process(imageToOcr, function (err, text) {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log(text);
-    }
-});
-
-
-
-
+app.use("/api", routes);
