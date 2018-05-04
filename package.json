@@ -2,10 +2,10 @@
   "name": "Dev",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node ./src/server.js --exec \"babel-node src --presets env\""
+    "start": "babel-node ./src/index.js --exec \"babel-node src --presets env\""
   },
   "keywords": [],
   "author": "",
