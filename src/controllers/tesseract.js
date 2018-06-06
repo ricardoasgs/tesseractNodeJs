@@ -4,7 +4,10 @@ import buffer from 'buffer';
 import fs from 'fs';
 
 export async function recognize(req, res) {
+    
     const { base64 } = req.body;
+
+    console.log(base64)    
     try {
         decode_base64(base64, 'carPlate.jpg', res);
     } catch (err) {
